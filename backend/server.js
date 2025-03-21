@@ -12,10 +12,10 @@ app.listen(port, () => {
 });
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "123456",
-  database: "react_crud",
+  host: "mysql",
+  user: "myuser",
+  password: "mypassword",
+  database: "mydatabase",
 });
 
 app.get("/", (req, res) => {
