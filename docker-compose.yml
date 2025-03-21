@@ -20,8 +20,8 @@ services:
     restart: always
     ports:
       - "5000:5000"
-    depends_on:
-      - mysql
+    # depends_on:
+    #   - mysql
     environment:
      DB_HOST: mysql
      DB_USER: myuser
