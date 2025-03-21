@@ -3,7 +3,7 @@ import cors from "cors";
 import mysql from "mysql2";
 
 const app = express();
-const port = 3000;
+const port = 5000;
 app.use(cors()); // for allowing cross-origin requests from frontend to backend server.It is a middleware function.
 app.use(express.json()); // for parsing application/json
 
