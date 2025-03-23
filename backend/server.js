@@ -12,10 +12,15 @@ app.listen(port, () => {
 });
 
 const connection = mysql.createConnection({
-  host: "mysql",
-  user: "myuser",
-  password: "mypassword",
-  database: "mydatabase",
+  // host: "mysql",
+  // user: "myuser",
+  // password: "mypassword",
+  // database: "mydatabase",
+
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "blog",
 });
 
 app.get("/", (req, res) => {
